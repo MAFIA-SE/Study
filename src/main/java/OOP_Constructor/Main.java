@@ -33,7 +33,7 @@ public class Main {
         System.out.printf("\nMake: %s\nModel: %s\nColor: %s\nPrice: %d$", car3.make, car3.model, car3.color, car3.price);*/
 
         //Task 2
-        Programmer programmer1 = new Programmer();
+        /*Programmer programmer1 = new Programmer();
         System.out.print("Enter name: ");
         programmer1.name = scanner.nextLine();
         System.out.print("Enter surname: ");
@@ -53,6 +53,22 @@ public class Main {
         programmer2.age = scanner.nextByte();
 
         System.out.printf("Name: %s\nSurname: %s\nAge: %d\nDate of birth: %d year\n", programmer2.name, programmer2.surname, programmer2.age, Programmer.dateOfBirth(programmer2.age));
+*/
+        //Task 1
+        /*Passport person1 = new Passport(258123, "Max", "Zhao", 2001, 'M', "French");
+        Passport person2 = new Passport(123532, "Christina", "Alex", 2004, 'F', "Polish");
+
+        person1.printInfo();
+        person2.printInfo();*/
+        //Task 2
+        Student[] students = new Student[5];
+        students[0] = new Student("Maxim", "Java", (byte)26);
+        students[1] = new Student("Alex", "Java", (byte)22);
+        students[2] = new Student("Anton", "JS", (byte)32);
+        students[3] = new Student("Shona", "Java", (byte)35);
+        students[4] = new Student("Saraf", "JS", (byte)29);
+
+        Student.countInfoGroup(students);
 
     }
 }
