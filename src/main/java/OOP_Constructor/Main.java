@@ -69,6 +69,11 @@ public class Main {
         students[4] = new Student("Saraf", "JS", (byte)29);
 
         Student.countInfoGroup(students);
+        //Task 3
+        Student.avgAge(students);
 
+        //Task 4
+        OOP_Constructor.Clone.Student[] students1 = new OOP_Constructor.Clone.Student[5];
+        students1[0] = new OOP_Constructor.Clone.Student();
     }
 }

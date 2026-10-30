@@ -29,4 +29,13 @@ public class Student {
         }
         System.out.printf("Java: %d\nJS: %d", counterJava, counterJS);
     }
+
+    public static  void avgAge(Student[] students){
+        int sumAge = 0;
+        for (Student student : students){
+            sumAge += student.age;
+        }
+        double average = (double) sumAge / students.length;
+        System.out.printf("\nAVG age: %.1f", average);
+    }
 }
