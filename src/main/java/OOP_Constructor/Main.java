@@ -1,5 +1,6 @@
 package OOP_Constructor;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
@@ -61,19 +62,25 @@ public class Main {
         person1.printInfo();
         person2.printInfo();*/
         //Task 2
-        Student[] students = new Student[5];
+        /*Student[] students = new Student[5];
         students[0] = new Student("Maxim", "Java", (byte)26);
         students[1] = new Student("Alex", "Java", (byte)22);
         students[2] = new Student("Anton", "JS", (byte)32);
         students[3] = new Student("Shona", "Java", (byte)35);
         students[4] = new Student("Saraf", "JS", (byte)29);
 
-        Student.countInfoGroup(students);
+        Student.countInfoGroup(students);*/
         //Task 3
-        Student.avgAge(students);
+        /*Student.avgAge(students);*/
 
         //Task 4
         OOP_Constructor.Clone.Student[] students1 = new OOP_Constructor.Clone.Student[5];
-        students1[0] = new OOP_Constructor.Clone.Student();
+        students1[0] = new OOP_Constructor.Clone.Student("James", LocalDate.of(1955, 5, 19), "+1 (650) 555-0155", "Canadian");
+        students1[1] = new OOP_Constructor.Clone.Student("Larry",LocalDate.of(1973, 3, 26), "+1 (305) 555-0143", "American");
+        students1[2] = new OOP_Constructor.Clone.Student("Sergey",LocalDate.of(1973, 8, 21), "+1 (512) 555-0187", "Russian");
+        students1[3] = new OOP_Constructor.Clone.Student("Jeff", LocalDate.of(1968, 7, 23), "+1 (650) 555-0101", "American");
+        students1[4] = new OOP_Constructor.Clone.Student("Kudaiberdi", LocalDate.of(2009, 6,4),"+996 (220) 45-56-77","Kyrgyz");
+
+        OOP_Constructor.Clone.Student.printMassive(students1);
     }
 }
