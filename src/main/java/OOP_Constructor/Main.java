@@ -74,13 +74,41 @@ public class Main {
         /*Student.avgAge(students);*/
 
         //Task 4
-        OOP_Constructor.Clone.Student[] students1 = new OOP_Constructor.Clone.Student[5];
+        /*OOP_Constructor.Clone.Student[] students1 = new OOP_Constructor.Clone.Student[5];
         students1[0] = new OOP_Constructor.Clone.Student("James", LocalDate.of(1955, 5, 19), "+1 (650) 555-0155", "Canadian");
         students1[1] = new OOP_Constructor.Clone.Student("Larry",LocalDate.of(1973, 3, 26), "+1 (305) 555-0143", "American");
         students1[2] = new OOP_Constructor.Clone.Student("Sergey",LocalDate.of(1973, 8, 21), "+1 (512) 555-0187", "Russian");
         students1[3] = new OOP_Constructor.Clone.Student("Jeff", LocalDate.of(1968, 7, 23), "+1 (650) 555-0101", "American");
         students1[4] = new OOP_Constructor.Clone.Student("Kudaiberdi", LocalDate.of(2009, 6,4),"+996 (220) 45-56-77","Kyrgyz");
 
-        OOP_Constructor.Clone.Student.printMassive(students1);
+        OOP_Constructor.Clone.Student.printMassive(students1);*/
+        //Task 6
+        /*Seasons seasons = new Seasons();
+        System.out.print("Enter any day of the month to find the season: ");
+        int numSeason = scanner.nextInt();
+        Seasons.checkSeason(numSeason);*/
+        //Task 7
+        Person[] people = new Person[3];
+        people[0] = new Person("Alex", "Amande", LocalDate.of(1991, 5, 21));
+        people[1] = new Person("James", "Friderich", LocalDate.of(2002, 12, 5));
+        people[2] = new Person("Max", "Anish", LocalDate.of(1997, 7, 14));
+
+        Group[] groups = new Group[2];
+        groups[0] = new Group("Sales", LocalDate.of(2000, 6, 14), people[1]);
+        groups[1] = new Group("Suppliers", LocalDate.of(2000, 4, 27), people[2]);
+
+        Company company = new Company("Frech", "USA", LocalDate.of(2000, 4, 15), people[0], groups);
+
+        System.out.println("Information people:");
+        people[0].printInfoPerson();
+        people[1].printInfoPerson();
+        people[2].printInfoPerson();
+
+        System.out.println("Information of Groups:");
+        groups[0].printInfoGroups();
+        groups[1].printInfoGroups();
+
+        System.out.println("Information Company:");
+        company.printInfoCompany();
     }
 }
