@@ -55,8 +55,93 @@ public class Task {
             array[num] = word.charAt(i);
             num++;
         }
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]);
+        for (char c : array) {
+            System.out.print(c);
         }
+    }
+
+    public static String word(String word){
+        char[] array = new char[word.length()];
+        int num = 0;
+        for (int i = word.length() - 1; i >= 0; i--) {
+            array[num] = word.charAt(i);
+            num++;
+        }
+        StringBuilder inverseWord = new StringBuilder();
+        for (char c : array) {
+            inverseWord.append(c);
+        }
+        return inverseWord.toString();
+    }
+
+    //Task 6
+    public static int[] arrayPlus1(int[] array){
+        int[] numbers = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            numbers[i] = array[i] + 1;
+        }
+        return numbers;
+    }
+
+    //Task 7.1
+
+    public static int bigNumber(int number1, int number2, int number3){
+        int max = number1;
+
+        if (number1 == number2 && number1 == number3){
+            return 0;
+        }else {
+            if (number2 > max){
+                max = number2;
+            }
+            if (number3 > max){
+                max = number3;
+            }
+            return max;
+        }
+    }
+
+    //Task 7.2
+    public static int bigNumber(int[] array){
+        int max = array[0];
+
+        for (int j : array) {
+            if (j > max) {
+                max = j;
+            }
+        }
+        return max;
+    }
+
+    //Task 7.3
+    public static int smallNumber(int[] array){
+        int min = array[0];
+
+        for (int i : array){
+            if (i < min){
+                min = i;
+            }
+        }
+        return min;
+    }
+
+    //Task 8
+    public static boolean presentOrNot(String[] words, String word){
+        for (String i : words){
+            if (i.equalsIgnoreCase(word)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //Task 9
+    public static int findMonth(int month){
+        return switch (month) {
+            case 1, 3, 5, 7, 8, 10, 12 -> 31;
+            case 4, 6, 9, 11 -> 30;
+            case 2 -> 28;
+            default -> 0;
+        };
     }
 }
