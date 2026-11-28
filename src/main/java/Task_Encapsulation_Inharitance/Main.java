@@ -22,7 +22,7 @@ public class Main {
         }*/
 
         //Task 2
-        Mother mother = new Mother("Alex", 42, "Blue");
+       /* Mother mother = new Mother("Alex", 42, "Blue");
         Mother mother2 = new Mother("Janna", 34, "Green");
         Daughter daughter = new Daughter("Anna", 13, "Blue", "Black", 145);
         Daughter daughter2 = new Daughter("Seiko", 10, "Brown", "Blond", 125);
@@ -30,6 +30,23 @@ public class Main {
         System.out.println(mother.statusPerson());
         System.out.println(mother2.statusPerson());
         System.out.println(daughter.statusPerson());
-        System.out.println(daughter2.statusPerson());
+        System.out.println(daughter2.statusPerson());*/
+
+        //Task 3
+        /*Archer archer = new Archer(20, "Laconia", "Wood bow", 10);
+        Rider rider = new Rider(10, "Laconia", "Horse", "Spear");
+        Saber saber = new Saber(30, "Laconia", "Kopis", "Hoplon");
+        Philosopher philosopher = new Philosopher(2, "Laconia", "Linkurg and Hilon", "Life");
+        Spartans[] spartans = {archer, rider, saber, philosopher};
+
+
+        for (Spartans spartan : spartans){
+            System.out.println("Count: " + spartan.getCount());
+            System.out.println("Location: " + spartan.getRegion());
+            System.out.print("Sentence: ");
+            spartan.printWord();
+        }
+        Method.sortByCount(spartans);*/
+
     }
 }
